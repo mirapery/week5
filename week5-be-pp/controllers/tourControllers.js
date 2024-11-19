@@ -58,7 +58,7 @@ const updateTour = async (req, res) => {
     if (updatedTour) {
       return res.status(200).json(updatedTour);
     } else {
-      return res.status(400).json({ message: "Tour not found" });
+      return res.status(404).json({ message: "Tour not found" });
     }
   } catch (error) {
     res.status(500).json({ message: "Failed to update tour" });
