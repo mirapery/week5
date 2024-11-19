@@ -28,18 +28,6 @@ const createUser = async (req, res) => {
   }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
 // GET /users/:userId
 const getUserById = async (req, res) => {
   const { userId } = req.params;
